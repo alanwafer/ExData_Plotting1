@@ -33,9 +33,9 @@ with(df, {
       lines(Sub_metering_2~timestamp,col='Red')
       lines(Sub_metering_3~timestamp,col='Blue')
 })
-legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, 
-       legend=c("Sub_metering_1 ", "Sub_metering_2 ", "Sub_metering_3 "),bty = 'n')
-
+       
+       legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  ")
+       ,lty=c(1,1), bty="n", cex=.5)
 
 
 dev.copy(png, file="plot3.png", height=480, width=480)
